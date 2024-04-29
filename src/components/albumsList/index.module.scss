@@ -1,0 +1,19 @@
+@import "../../assets/variables.scss";
+
+.Discover {
+  margin-bottom: 2rem;
+  .title {
+    color: $secondary-color;
+    margin: 20px;
+  }
+
+  .newReleases {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    gap: 0.8rem;
+    height: 100%;
+  }
+}

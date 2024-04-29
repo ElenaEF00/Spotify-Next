@@ -1,0 +1,44 @@
+@import "../../assets/variables.scss";
+
+.album {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+
+  .pic {
+    object-fit: cover;
+    position: relative;
+    border-radius: 24px;
+    width: 140px;
+  }
+
+  .texts {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba($primary-color, 0.9);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    .name {
+      font-size: 1rem;
+      max-width: 90%;
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .artists {
+      font-size: 0.8rem;
+    }
+
+    .date {
+      font-size: 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../assets/variables.scss";
+
+.header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+
+  .title {
+    color: $bg-color;
+    max-width: 60%;
+    margin-left: 1rem;
+
+    .span {
+      color: $secondary-color;
+    }
+  }
+  .image {
+    max-width: 40%;
+    height: auto;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 25vh;
+    margin-top: 10px;
+
+    .title {
+      margin: 0;
+    }
+
+    .image {
+      height: 25vh;
+      width: auto;
+      margin: 0;
+    }
+  }
+}

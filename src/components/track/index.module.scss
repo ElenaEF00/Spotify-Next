@@ -1,0 +1,60 @@
+@import "../../assets/variables.scss";
+
+.track {
+  width: 90vw;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba($secondary-color, 0.3);
+
+  .mainInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .num {
+      width: 10px;
+      text-align: center;
+    }
+
+    .img {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      height: 40px;
+      justify-content: space-evenly;
+
+      .title {
+        max-width: 200px;
+        font-size: 1rem;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .artist {
+        margin-top: 5px;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .minutes {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .track {
+    width: 60vw;
+  }
+}

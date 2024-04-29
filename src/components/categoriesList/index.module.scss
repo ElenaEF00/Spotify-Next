@@ -1,0 +1,29 @@
+.categoriesList {
+  width: 100%;
+
+  .title {
+    color: white;
+    margin: 20px 30px;
+    margin-top: 0;
+  }
+
+  .categories {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    gap: 0.5rem;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .categoriesList {
+    width: 60%;
+
+    .title {
+      text-align: center;
+    }
+  }
+}

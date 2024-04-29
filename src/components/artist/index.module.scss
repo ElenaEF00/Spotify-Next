@@ -1,0 +1,21 @@
+@import "../../assets/variables.scss";
+
+.artist {
+  // width: 150px;
+  width: max-content;
+  border: 1px solid $secondary-color;
+  border-radius: 20px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .pic {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+  }
+  .name {
+    color: white;
+  }
+}

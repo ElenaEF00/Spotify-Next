@@ -1,0 +1,62 @@
+@import "../assets/variables.scss";
+
+.Album {
+  .cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .pic {
+      width: 150px;
+      height: 150px;
+    }
+    .title {
+      color: white;
+      font-size: 2rem;
+      margin-left: 10px;
+    }
+  }
+
+  .Info {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .artist_name {
+      font-size: 1rem;
+    }
+
+    .bullet {
+      color: $secondary-color;
+    }
+  }
+
+  .icons {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 20px;
+    gap: 1.5rem;
+
+    .icon {
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .listIntro {
+    width: 100vw;
+    display: flex;
+    color: $secondary-color;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid $secondary-color;
+  }
+}
