@@ -59,7 +59,8 @@ export default function Login() {
         <div className={styles.MainInfo}>
           <h2 className={styles.text}>
             Esplora nuovi ritmi e scopri le tue canzoni preferite su Spotify!{" "}
-            <span>Accedi ora</span> per un'esperienza musicale senza confini
+            <span>Accedi ora</span> per un`&apos;`esperienza musicale senza
+            confini
           </h2>
           {!token ? (
             <Link
