@@ -3,7 +3,6 @@ import styles from "../../styles/Search.module.scss";
 import Navbar from "@/components/navbar";
 import SearchInput from "@/components/searchInput";
 import CategoriesList from "@/components/categoriesList";
-import { Main } from "next/document";
 import { useState } from "react";
 import Album from "@/components/album";
 import Artist from "@/components/artist";

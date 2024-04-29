@@ -111,7 +111,7 @@ export default function Artist() {
           )}
         </div>
 
-        <h3 className={styles.title}>Artist`&apos;`s Top Tracks</h3>
+        <h3 className={styles.title}>Artist&apos;s Top Tracks</h3>
 
         <div className={styles.listIntro}>
           <p>#</p>
