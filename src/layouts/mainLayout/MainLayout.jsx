@@ -10,7 +10,6 @@ import {
 } from "react-icons/go";
 import { usePathname } from "next/navigation";
 import styles from "./index.module.scss";
-import { Main } from "next/document";
 
 const MainLayout = ({ children }) => {
   const pathName = usePathname();
