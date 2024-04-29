@@ -94,7 +94,9 @@ export default function Profile() {
             <h3 className={styles.title}>Followed Artists</h3>
             <div className={styles.followedArtists}>
               {Object.keys(followedArtist).length > 0 ? (
-                followedArtist.map((fArtist) => <Artist artistData={fArtist} />)
+                followedArtist.map((fArtist, key) => (
+                  <Artist artistData={fArtist} key={key} />
+                ))
               ) : (
                 <h1>Loading...</h1>
               )}
@@ -110,8 +112,12 @@ export default function Profile() {
             <h3 className={styles.title}>Saved Albums</h3>
             <div className={styles.savedAlbums}>
               {Object.keys(savedAlbums).length > 0 ? (
-                savedAlbums.map((sAlbum) => (
-                  <Album albumData={sAlbum.album} release_date={false} />
+                savedAlbums.map((sAlbum, key) => (
+                  <Album
+                    albumData={sAlbum.album}
+                    release_date={false}
+                    key={key}
+                  />
                 ))
               ) : (
                 <h1>Loading...</h1>
@@ -123,11 +129,12 @@ export default function Profile() {
             <h3 className={styles.title}>Saved Playlists</h3>
             <div className={styles.savedPlaylists}>
               {Object.keys(savedPlaylists).length > 0 ? (
-                savedPlaylists.map((sPlaylist) => (
+                savedPlaylists.map((sPlaylist, key) => (
                   <Album
                     albumData={sPlaylist}
                     artist={false}
                     release_date={false}
+                    key={key}
                   />
                 ))
               ) : (
