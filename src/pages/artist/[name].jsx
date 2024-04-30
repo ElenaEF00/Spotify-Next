@@ -100,7 +100,7 @@ export default function Artist() {
           <p>Loading...</p>
         )}
 
-        <h3 className={styles.title}>Artist's Albums</h3>
+        <h3 className={styles.title}>Artist&apos;s Albums</h3>
         <div className={styles.artist_albums}>
           {Object.keys(artistAlbums).length > 0 ? (
             artistAlbums.items.map((album, key) => (
