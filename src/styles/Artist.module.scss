@@ -26,8 +26,17 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 10px;
+
+  .artistInfo {
+    display: flex;
+    align-items: center;
+
+    .bullet {
+      color: $secondary-color;
+    }
+  }
 }
 
 .title {
@@ -54,4 +63,10 @@
   gap: 0.8rem;
   height: 100%;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .listIntro {
+    width: 60vw;
+  }
 }
