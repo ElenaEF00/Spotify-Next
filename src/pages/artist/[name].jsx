@@ -89,10 +89,14 @@ export default function Artist() {
                 <h2 className={styles.title}>{artistName.name}</h2>
               </div>
               <div className={styles.Info}>
-                <VscCircleFilled className={styles.bullet} />
-                <p>{artistName.followers.total} followers</p>
-                <VscCircleFilled className={styles.bullet} />
-                <p>{artistName.genres.map((genre) => genre).join(", ")}</p>
+                <div className={styles.artistInfo}>
+                  <VscCircleFilled className={styles.bullet} />
+                  <p>{artistName.followers.total} followers</p>
+                </div>
+                <div className={styles.artistInfo}>
+                  <VscCircleFilled className={styles.bullet} />
+                  <p>{artistName.genres.map((genre) => genre).join(", ")}</p>
+                </div>
               </div>
             </div>
           </>
