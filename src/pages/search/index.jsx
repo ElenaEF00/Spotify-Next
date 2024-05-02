@@ -16,6 +16,9 @@ export default function Search() {
     (searchResults.artists.items.length > 0 ||
       searchResults.albums.items.length > 0);
 
+  const hasArtists = hasSearchResults && searchResults.artists.items.length > 0;
+  const hasAlbums = hasSearchResults && searchResults.albums.items.length > 0;
+
   return (
     <MainLayout>
       <Navbar />
@@ -28,24 +31,26 @@ export default function Search() {
       {!hasSearchResults && <CategoriesList />}
 
       <div className={styles.resultsPage}>
-        <div className={styles.results}>
-          <h4>Artisti</h4>
-          <div className={styles.searchResults}>
-            {hasSearchResults &&
-              searchResults.artists.items.map((artist, key) => (
+        {hasArtists && (
+          <div className={styles.results}>
+            <h4>Artisti</h4>
+            <div className={styles.searchResults}>
+              {searchResults.artists.items.map((artist, key) => (
                 <Artist artistData={artist} key={key} id={key} />
               ))}
+            </div>
           </div>
-        </div>
-        <div className={styles.results}>
-          <h4>Albums</h4>
-          <div className={styles.searchResults}>
-            {hasSearchResults &&
-              searchResults.albums.items.map((album, key) => (
+        )}
+        {hasAlbums && (
+          <div className={styles.results}>
+            <h4>Albums</h4>
+            <div className={styles.searchResults}>
+              {searchResults.albums.items.map((album, key) => (
                 <Album albumData={album} key={key} id={key} />
               ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </MainLayout>
   );
